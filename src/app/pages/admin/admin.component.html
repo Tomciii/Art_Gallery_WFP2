@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="form-container">
+  <h1>Lets Submit a new Art Piece</h1>
+
+  <div>
+    <label for="imageURL">Image URL:</label>
+    <input type="text" id="imageURL" [(ngModel)]="art.imageURL" />
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="art.name" />
+
+    <label for="text">Text:</label>
+    <textarea id="text" [(ngModel)]="art.text"></textarea>
+
+    <button (click)="saveArt()">Save Art</button>
+  </div>
+  <!-- <h2>Delete image</h2>
+   <div>-->
+<!--    <label>Index:</label>-->
+<!--    <input type="text" id="index" [(ngModel)]="index" />-->
+<!--    <button (click)="delete()">Delete Art</button>-->
+<!--  </div>-->
+</div>
