@@ -8,9 +8,9 @@ import {Art} from "../model/art.model";
   providedIn: 'root',
 })
 export class ArtFacade {
-  private getAllArt = 'http://localhost:8085/application/public/api/getAllArt';
-  private save = 'http://localhost:8085/application/public/api/save'
-  private deleteUrl = 'http://localhost:8085/application/public/api/delete'
+  private getAllArt = 'http://localhost:8085/public/api/getAllArt';
+  private save = 'http://localhost:8085/public/api/save'
+  private deleteUrl = 'http://localhost:8085/public/api/delete'
 
   constructor(private http: HttpClient) {}
 
